@@ -1,0 +1,13 @@
+version: "2"
+
+services: 
+
+  deep_learning:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 8888:8888
+      - 6006:6006
+    volumes: 
+      - ./notebooks:/notebooks
