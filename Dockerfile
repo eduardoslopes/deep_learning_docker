@@ -44,6 +44,11 @@ RUN mkdir -p ~/opencv cd ~/opencv && \
     -DWITH_TBB=ON \
     -DWITH_GDAL=ON \
     -DWITH_XINE=ON \
+    -DBUILD_NEW_PYTHON_SUPPORT=ON \
+    -DWITH_V4L=ON \
+    -DINSTALL_C_EXAMPLES=ON \
+    -DINSTALL_PYTHON_EXAMPLES=ON \
+    -DWITH_GTK=ON \
     -DBUILD_EXAMPLES=ON .. && \
     make -j4 && \
     make install && \ 
