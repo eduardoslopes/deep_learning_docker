@@ -27,7 +27,8 @@ RUN apt-get update && \
     python-opencv \ 
     qt5-default \
     libvtk6-dev \ 
-    zlib1g-dev 
+    zlib1g-dev \
+    libv4l-dev
 
 RUN mkdir -p ~/opencv cd ~/opencv && \
     wget https://github.com/Itseez/opencv/archive/3.0.0.zip && \
